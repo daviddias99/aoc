@@ -1,0 +1,20 @@
+FileHandling = require 'fileHandling'
+
+local function parseLine(line) 
+  return string.match(line, '(%d+)%-(%d+) (%a): (%a+)')
+end
+
+local function isValid(password, char, lowerBound, upperBound)
+  local atFirst = (string.sub(password,lowerBound, lowerBound) == char) and 1 or 0
+  local atSecond = (string.sub(password, upperBound, upperBound) == char) and 1 or 0
+  return atFirst + atSecond == 1
+end
+
+local lines = FileHandling.getLinesFromFile("input/inputA.txt")
+local result = 0
+for _, line in pairs(lines) do
+  local lowerBound, upperBound, char, password = parseLine(line)
+  result = result + (isValid(password, char, tonumber(lowerBound), tonumber(upperBound)) and 1 or 0)
+end
+
+print(result)
