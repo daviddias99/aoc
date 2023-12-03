@@ -8,4 +8,5 @@ This repository contains my yearly attempts at solving the AoC challenges. I've 
 
 - 2019 - Python
 - 2020 - Lua
-- 2021 - Scala
+- 2021 - Scala/Julia
+- 2023 - Golang
