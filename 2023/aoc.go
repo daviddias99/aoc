@@ -5,6 +5,7 @@ import (
 	"aoc/2023/day1"
 	"aoc/2023/day2"
 	"aoc/2023/day3"
+	"aoc/2023/day4"
 	"fmt"
 	"os"
 )
@@ -24,5 +25,8 @@ func main() {
 	case "3":
 		day3.SolveA()
 		day3.SolveB()
+	case "4":
+		day4.SolveA()
+		day4.SolveB()
 	}
 }
