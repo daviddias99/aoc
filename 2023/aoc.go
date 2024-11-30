@@ -2,6 +2,9 @@ package main
 
 import (
 	"aoc/2023/day1"
+	"aoc/2023/day10"
+	"aoc/2023/day11"
+	"aoc/2023/day12"
 	"aoc/2023/day2"
 	"aoc/2023/day3"
 	"aoc/2023/day4"
@@ -47,5 +50,14 @@ func main() {
 	case "9":
 		day9.SolveA()
 		day9.SolveB()
+	case "10":
+		day10.SolveA()
+		day10.SolveB()
+	case "11":
+		day11.SolveA()
+		day11.SolveB()
+	case "12":
+		day12.SolveA()
+		day12.SolveB()
 	}
 }
